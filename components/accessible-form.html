@@ -1,0 +1,20 @@
+<!-- Reusable accessible form reference. -->
+<form>
+  <fieldset>
+    <legend>Contact details</legend>
+    <div class="form-field">
+      <label for="component-name">Full name <span aria-hidden="true">*</span></label>
+      <input id="component-name" name="name" type="text" autocomplete="name" required minlength="2">
+    </div>
+    <div class="form-field">
+      <label for="component-email">Email address <span aria-hidden="true">*</span></label>
+      <input id="component-email" name="email" type="email" autocomplete="email" required aria-describedby="component-email-help">
+      <small id="component-email-help">Enter a valid email address.</small>
+    </div>
+    <div class="form-field">
+      <label for="component-message">Message <span aria-hidden="true">*</span></label>
+      <textarea id="component-message" name="message" rows="4" required minlength="10"></textarea>
+    </div>
+    <button class="button button-primary" type="submit">Submit</button>
+  </fieldset>
+</form>

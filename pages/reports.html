@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible sample reports page for the ClearView enterprise dashboard.">
+  <title>Reports | ClearView Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="ClearView Dashboard home">ClearView</a>
+    <p class="header-context">Enterprise dashboard</p>
+    <div class="header-actions"><span class="user-name">Prachi S. Shetty</span></div>
+  </header>
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Sidebar">
+      <nav aria-label="Main navigation">
+        <h2 class="sidebar-heading">Workspace</h2>
+        <ul class="nav-list">
+          <li><a href="../index.html">Overview</a></li>
+          <li><a href="reports.html" aria-current="page">Reports</a></li>
+          <li><a href="../index.html#team-section">Team</a></li>
+          <li><a href="../index.html#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main id="main-content" class="main-content">
+      <section class="page-heading" aria-labelledby="page-title">
+        <p class="eyebrow">WORKSPACE / REPORTS</p>
+        <h1 id="page-title">Reports</h1>
+        <p>A sample report table using semantic headings and accessible table markup.</p>
+      </section>
+      <section class="panel" aria-labelledby="report-table-heading">
+        <div class="panel-heading">
+          <div>
+            <h2 id="report-table-heading">Monthly project report</h2>
+            <p>Illustrative data for the dashboard demo.</p>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <caption>Project progress for the current reporting period</caption>
+            <thead>
+              <tr><th scope="col">Project</th><th scope="col">Owner</th><th scope="col">Completion</th><th scope="col">Due date</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Website refresh</th><td>Maya Nair</td><td>80%</td><td><time datetime="2026-10-20">20 Oct 2026</time></td></tr>
+              <tr><th scope="row">Access review</th><td>Aarav Rao</td><td>60%</td><td><time datetime="2026-10-24">24 Oct 2026</time></td></tr>
+              <tr><th scope="row">API documentation</th><td>Ishaan Das</td><td>45%</td><td><time datetime="2026-10-30">30 Oct 2026</time></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <p><a class="text-link" href="../index.html">Return to dashboard overview</a></p>
+    </main>
+  </div>
+  <footer class="site-footer"><p>&copy; 2026 ClearView Dashboard. Demonstration project.</p></footer>
+</body>
+</html>
